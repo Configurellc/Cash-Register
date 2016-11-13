@@ -31,9 +31,12 @@ var cashRegister = (function () {
 
 })();
 
+
 document.getElementById('buttonSeven').addEventListener('click', seven);
 
+
 function seven() {
-  console.log('7.00');
+
+ document.getElementById('display').innerHTML = "Hello Motto";
 }
 

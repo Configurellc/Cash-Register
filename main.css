@@ -7,3 +7,8 @@ table{
   background: white;
 
 }
+
+#display {
+  background-color: white;
+  width: 358px;
+}
