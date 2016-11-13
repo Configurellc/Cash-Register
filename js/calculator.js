@@ -8,6 +8,10 @@ var calculator = (function () {
     return _total;
   }
 
+  function _getTotal(x) {
+    
+    return _total;  
+  }
 
 
 
