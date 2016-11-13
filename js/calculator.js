@@ -24,7 +24,9 @@ var calculator = (function () {
     _total *= x;
   }
 
-
+  function _divide(x) {
+    _total /= x;
+  }
 
 
 
@@ -41,7 +43,8 @@ return {
   getTotal: _getTotal,
   add: _add,
   subtract: _subtract,
-  multiply: _multiply
+  multiply: _multiply,
+  divide: _divide
 };
 
 })();
