@@ -9,8 +9,12 @@ var calculator = (function () {
   }
 
   function _getTotal(x) {
-    
-    return _total;  
+
+    return _total;
+  }
+
+  function _add(x) {
+    _total += x;
   }
 
 
@@ -28,6 +32,10 @@ var calculator = (function () {
 
 
 
-
+return {
+  load: _load,
+  getTotal: _getTotal,
+  add: _add
+}
 
 })();
