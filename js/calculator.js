@@ -4,7 +4,6 @@ var calculator = (function () {
 
   function _load(x) {
     _total = x;
-
     return _total;
   }
 
@@ -29,11 +28,12 @@ var calculator = (function () {
   }
 
   function _recallCache(x) {
-    _cache = _total;
-
+    return _cache;
   }
 
-
+  function _saveCache(x) {
+    _cache = _total;
+  }
 
 
 
@@ -49,7 +49,9 @@ return {
   add: _add,
   subtract: _subtract,
   multiply: _multiply,
-  divide: _divide
+  divide: _divide,
+  recallCache: _recallCache,
+  saveCache: _saveCache
 };
 
 })();
