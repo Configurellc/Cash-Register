@@ -49,16 +49,8 @@ var calculator = (function () {
 
   function _clearCache(x) {
     _cache = 0;
-    return _cache
+    return _cache;
   }
-
-
-
-
-
-
-
-
 
 return {
   load: _load,
