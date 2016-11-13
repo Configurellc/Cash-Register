@@ -6,8 +6,8 @@ var calculator = (function () {
     if (typeof x !== 'number'){
      throw new Error(`Invalid input type: ${x} is not a Number`);
     }
-  //   return null;
-    }
+  //return null;
+  }
 
   function _load(x) {
     _validations(x);
