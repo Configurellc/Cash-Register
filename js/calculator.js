@@ -35,6 +35,11 @@ var calculator = (function () {
     _cache = _total;
   }
 
+  function _clearCache(x) {
+    _cache = 0;
+    return _cache
+  }
+
 
 
 
@@ -51,7 +56,8 @@ return {
   multiply: _multiply,
   divide: _divide,
   recallCache: _recallCache,
-  saveCache: _saveCache
+  saveCache: _saveCache,
+  clearCache: _clearCache
 };
 
 })();
