@@ -1,4 +1,4 @@
-var cashReigster = (function () {
+var cashRegister = (function () {
 
   function _validations(x){
     if (typeof x !== 'number'){
@@ -22,3 +22,10 @@ var cashReigster = (function () {
 
 
 })();
+
+document.getElementById('buttonSeven').addEventListener('click', seven)
+
+function seven() {
+  console.log('7.00');
+}
+
