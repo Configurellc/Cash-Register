@@ -28,6 +28,11 @@ var calculator = (function () {
     _total /= x;
   }
 
+  function _recallCache(x) {
+    _cache = _total;
+
+  }
+
 
 
 
