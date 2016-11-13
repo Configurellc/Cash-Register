@@ -2,7 +2,15 @@ var calculator = (function () {
   let _cache = 0;
   let _total = 0;
 
+  function _validations(x){
+    if (typeof x !== 'number'){
+     throw new Error(`Invalid input type: ${x} is not a Number`);
+    }
+  //   return null;
+    }
+
   function _load(x) {
+    _validations(x);
     _total = x;
     return _total;
   }
@@ -12,18 +20,22 @@ var calculator = (function () {
   }
 
   function _add(x) {
+    _validations(x);
     _total += x;
   }
 
   function _subtract(x) {
+    _validations(x);
     _total -= x;
   }
 
   function _multiply(x) {
+    _validations(x);
     _total *= x;
   }
 
   function _divide(x) {
+    _validations(x);
     _total /= x;
   }
 
