@@ -1,10 +1,10 @@
 var calculator = (function () {
-  let _cache = 0;
-  let _total = 0;
+  let _cache = 0.00;
+  let _total = 0.00;
 
   function _validations(x){
     if (typeof x !== 'number'){
-     throw new Error(`Invalid input type: ${x} is not a Number`);
+     throw new Error(`Invalid input type: ${x} is not a number`);
     }
   //return null;
   }
