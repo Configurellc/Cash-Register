@@ -17,7 +17,9 @@ var calculator = (function () {
     _total += x;
   }
 
-
+  function _subtract(x) {
+    _total -+ x;
+  }
 
 
 
@@ -35,7 +37,8 @@ var calculator = (function () {
 return {
   load: _load,
   getTotal: _getTotal,
-  add: _add
+  add: _add,
+  subtract: _subtract
 }
 
 })();
