@@ -1,6 +1,6 @@
 var calculator = (function () {
-  let _cache = 0.00;
-  let _total = 0.00;
+  let _cache = 0;
+  let _total = 0;
 
   function _validations(x){
     if (typeof x !== 'number'){
