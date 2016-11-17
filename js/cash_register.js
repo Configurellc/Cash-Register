@@ -29,55 +29,67 @@ var cashRegister = (function () {
 
 var myButtons = (function() {
   var myArray = [];
+  var myJoin = myArray.join('')
 
   document.getElementById("buttonSeven").addEventListener("click", seven);
     function seven() {
-     document.getElementById("display").innerHTML = "7";
-     // var myArray = [];
-      myArray.push('7');
-      console.log('seven', myArray);
 
+      myArray.push('7');
+      myJoin = myArray.join('');
+      console.log('seven', myJoin);
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonEight").addEventListener("click", eight);
     function eight() {
-     document.getElementById("display").innerHTML = "8";
-     myArray.push('8');
+
+      myArray.push('8');
+      myJoin = myArray.join('')
+      document.getElementById("display").innerHTML = myJoin;
+
     }
 
   document.getElementById("buttonNine").addEventListener("click", nine);
     function nine() {
-     document.getElementById("display").innerHTML = "9";
+
+      document.getElementById("display").innerHTML = "9";
       myArray.push('9');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
-  document.getElementById("buttonDivide").addEventListener("click", divide);
+    document.getElementById("buttonDivide").addEventListener("click", divide);
     function divide() {
+
      document.getElementById("display").innerHTML = "/";
     }
 
   document.getElementById("buttonClear").addEventListener("click", clear);
     function clear() {
-     document.getElementById("display").innerHTML = "0";
       myArray.push('0');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonFour").addEventListener("click", four);
     function four() {
-     document.getElementById("display").innerHTML = "4";
       myArray.push('4');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonFive").addEventListener("click", five);
     function five() {
-     document.getElementById("display").innerHTML = "5";
       myArray.push('5');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonSix").addEventListener("click", six);
     function six() {
-     document.getElementById("display").innerHTML = "6";
       myArray.push('6');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonMultiply").addEventListener("click", multiply);
@@ -92,20 +104,23 @@ var myButtons = (function() {
 
   document.getElementById('buttonOne').addEventListener("click", one);
     function one() {
-      document.getElementById("display").innerHTML = "1";
-       myArray.push('1');
+      myArray.push('1');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById('buttonTwo').addEventListener("click", two);
     function two() {
-      document.getElementById("display").innerHTML = "2";
-       myArray.push('2');
+      myArray.push('2');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonThree").addEventListener("click", three);
     function three() {
-      document.getElementById("display").innerHTML = "3";
-       myArray.push('3');
+      myArray.push('3');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonSubtract").addEventListener("click", subtract);
@@ -120,15 +135,17 @@ var myButtons = (function() {
 
   document.getElementById("buttonZero").addEventListener("click", zero);
     function zero() {
-      document.getElementById("display").innerHTML = "0";
-       myArray.push('0');
+      myArray.push('0');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
       }
 
   document.getElementById("buttonDoubleZero").addEventListener("click", doubleZero);
     function doubleZero() {
-      document.getElementById("display").innerHTML = "00";
-       myArray.push('00');
-       console.log('second', myArray);
+      myArray.push('00');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
+
     }
 
   document.getElementById("buttonDecimal").addEventListener("click", decimal);
