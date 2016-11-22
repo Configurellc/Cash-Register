@@ -66,9 +66,9 @@ var myButtons = (function() {
 
   document.getElementById("buttonClear").addEventListener("click", clear);
     function clear() {
-      myArray.push('0');
-      myJoin = myArray.join('');
-      document.getElementById("display").innerHTML = myJoin;
+      myArray = [];
+      myJoin = myArray;
+      document.getElementById("display").innerHTML = '0';
     }
 
   document.getElementById("buttonFour").addEventListener("click", four);
@@ -162,12 +162,6 @@ var myButtons = (function() {
     function withdraw() {
       document.getElementById("display").innerHTML = "Fix code";
     }
-    document.getElementById('display').addEventListener('click', displayConcat);
-     function displayConcat() {
-       var mycon = myArray.join('');
-       document.getElementById('display').innerHTML = mycon;
-       console.log("three", mycon);
-      }
 
 
 
