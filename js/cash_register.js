@@ -44,7 +44,7 @@ var myButtons = (function() {
     function eight() {
 
       myArray.push('8');
-      myJoin = myArray.join('')
+      myJoin = myArray.join('');
       document.getElementById("display").innerHTML = myJoin;
 
     }
@@ -150,7 +150,9 @@ var myButtons = (function() {
 
   document.getElementById("buttonDecimal").addEventListener("click", decimal);
     function decimal() {
-      document.getElementById("display").innerHTML = ".";
+      myArray.push('.');
+      myJoin = myArray.join('');
+      document.getElementById("display").innerHTML = myJoin;
     }
 
   document.getElementById("buttonAdd").addEventListener("click", plus);
